@@ -10,7 +10,102 @@
 </head>
 
 <body>
-   
+   <!-- Header -->
+   <header>
+      <div class="headBar">The Code Review</div>
+
+      <div class="headDesc">
+         <h1 class="signTitle">Signup for our newsletter</h1>
+         <p class="signDesc">Get the latest news on how your code is doing right in your box</p>
+
+         <div class="lineBox">
+            <hr class="lineOne">
+            <hr class="lineTwo">
+         </div>
+      </div>
+   </header>
+
+   <!-- Main Body -->
+   <main>
+      <form>
+         <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+               <label for="fullName">Full Name:</label>
+            </div>
+            <input type="text" name="name" id="name" required>
+
+            <div>
+               <label for="email">Email:</label>
+            </div>
+            <input type="email" name="email" id="email" required>
+
+            <div>
+               <label for="phoneNumber">Phone Number</label>
+            </div>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+
+            <div>
+               <label for="address">Street Address</label>
+            </div>
+            <input type="text" name="address" id="address">
+
+            <div>
+               <label for="city">City</label>
+            </div>
+            <input type="text" name="city" id="city">
+
+            <div>
+               <label for="state">State:</label>
+            </div>
+            <select id="state">
+               <option value="Melbourne">
+                  Melbourne
+               </option>
+               <option value="Sydney">
+                  Australia
+               </option>
+            </select>
+
+            <div>
+               <label for="zipCode">Zip Code</label>
+            </div>
+            <input type="text" name="zipCode" id="zipCode">
+            <hr class="lineTwo">
+         </fieldset>
+
+         <!-- Newsletter -->
+         <fieldset>
+            <legend>Newsletter</legend>
+            <div>
+               <label>Select the newsletter you would like to receive</label>
+            </div>
+            <span>
+               <input type="checkbox" id="htmlNews" name="htmlNews" checked>
+               <label for="htmlNews">HTML News</label><br>
+            </span>
+
+            <span>
+               <input type="checkbox" id="cssNews" name="cssNews">
+               <label for="cssNews">CSS News</label><br>
+            </span>
+
+            <span>
+               <input type="checkbox" id="javascriptNews" name="javascriptNews">
+               <label for="javascriptNews">Javascript News</label><br>
+            </span>
+
+
+         </fieldset>
+
+
+      </form>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <!-- <div>Copyright The Code Review</div> -->
+   </footer>
 
 </body>
 

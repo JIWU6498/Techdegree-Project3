@@ -1,3 +1,121 @@
 *{
    font-family: 'Merriweather', serif;
 }
+
+/* Header */
+header,footer{
+   text-align:center;
+   margin:auto;
+   font-size:1em;
+}
+
+.headBar{
+   background-color:#293945;
+   font-size:1.5em;
+   color:white;
+   text-transform: uppercase;
+   padding:3vh;
+   box-sizing:border-box;
+}
+
+.headDesc{
+   padding:5vh;
+   /* background-color:#fafafa; */
+   color:#293945;
+}
+
+.signTitle{
+   font-size:1.2em;
+   padding:5px;
+}
+
+.signDesc{
+   font-size:1em;
+   padding:2px;
+   margin-bottom:15px;
+}
+
+/* Decoration Line */
+.lineBox{
+   width:90%;
+   margin:auto;
+}
+
+.lineOne,
+.lineTwo{
+   color:#293945;
+   background-color:#293945;
+   text-align:center; 
+   margin: 0 auto;
+   border:none;
+}
+
+.lineOne{
+   height:3px;
+   margin-bottom:3px;
+}
+
+.lineTwo{
+   height:1px;
+}
+
+/* Form */
+
+form{
+   width:90%;
+   margin:auto;
+   font-size:1em;
+}
+
+fieldset{
+   border:none;
+   padding:5px 10px;
+}
+
+legend{
+   font-size: 1.2em;
+   font-weight: bold;
+   color:#293945;
+   text-align: left;
+   margin-bottom:10px;
+}
+
+input{
+   width:90%;
+   background-color:#fafafa;
+   text-align:left;
+   margin-bottom:10px;
+   padding:5px 10px;
+   border:1px solid #fafafa;
+}
+
+label{
+   display:block;
+   color:grey;
+   font-size:0.8em;
+   padding-bottom:10px;
+}
+
+input:target{
+   border:1px solid lightblue;
+}
+
+.span{
+   vertical-align: middle;
+}
+
+input[type="checkbox"]{
+   width:16px;
+   height:16px;
+   margin-bottom:0;
+   vertical-align: middle;
+   padding-right:20px;
+}
+
+input[type="checkbox"]+label{
+   display: inline;
+   padding-left:20px;
+   padding:0;
+   box-sizing:border-box;
+}
+
