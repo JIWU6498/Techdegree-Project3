@@ -28,6 +28,7 @@
    <!-- Main Body -->
    <main>
       <form>
+         <!-- Contact Information -->
          <fieldset>
             <legend>Contact Information</legend>
             <div>
@@ -95,16 +96,38 @@
                <label for="javascriptNews">Javascript News</label><br>
             </span>
 
+            <!-- Newsletter format -->
+            <div class="smallHeading">
+               <label>Newsletter Format</label>
+            </div>
+
+            <span>
+               <input type="radio" id="htmlFormat" name="htmlFormat" checked>
+               <label for="htmlFormat">HTML</label><br>
+            </span>
+
+            <span>
+               <input type="radio" id="plainText" name="plainText">
+               <label for="plainText">Plain Text</label><br>
+            </span>
+            <!-- Text Area -->
+            <div class="smallHeading">
+               <label for="topics">Other topics you'd like to hear about</label>
+            </div>
+            <textarea id="topics"></textarea>
 
          </fieldset>
 
+         <div class="buttonBox">
+            <button type="button" id="signUpButton">Sign Up</button>
+         </div>
 
       </form>
    </main>
 
    <!-- Footer -->
    <footer>
-      <!-- <div>Copyright The Code Review</div> -->
+      <div>Copyright The Code Review</div>
    </footer>
 
 </body>
