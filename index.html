@@ -13,38 +13,51 @@
    <!-- Header -->
    <header>
       <div class="headBar">The Code Review</div>
-
-      <div class="headDesc">
-         <h1 class="signTitle">Signup for our newsletter</h1>
-         <p class="signDesc">Get the latest news on how your code is doing right in your box</p>
-
-         <div class="lineBox">
-            <hr class="lineOne">
-            <hr class="lineTwo">
-         </div>
-      </div>
    </header>
 
    <!-- Main Body -->
    <main>
+      <div class="headDesc">
+         <h1 class="signTitle">Signup for our newsletter</h1>
+         <p class="signDesc">Get the latest news on how your code is doing right in your box</p>
+      </div>
+
       <form>
+         <div class="lineBox">
+            <hr class="lineOne">
+            <hr class="lineTwo">
+         </div>
+
          <!-- Contact Information -->
          <fieldset>
             <legend>Contact Information</legend>
-            <div>
+            <div class="flexbox">
                <label for="fullName">Full Name</label>
+               <input type="text" name="name" id="name" placeholder="Required " required>
             </div>
-            <input type="text" name="name" id="name" placeholder="Required" required>
 
-            <div>
-               <label for="email">Email Address</label>
+            <div class="flexbox">
+               <div class="labelBox">
+                  <label for="fullName">Full Name</label>
+               </div>
+               <div class="inputBox">
+                  <input type="text" name="name" id="name" placeholder="Required " required>
+               </div>
             </div>
-            <input type="email" name="email" id="email" placeholder="Required" required>
 
-            <div>
-               <label for="phoneNumber">Phone Number</label>
+            <div class="flexbox">
+               <div>
+                  <label for="email">Email Address</label>
+               </div>
+               <input type="email" name="email" id="email" placeholder="Required " required>
             </div>
-            <input type="tel" name="phoneNumber" id="phoneNumber">
+
+            <div class="felxbox">
+               <div>
+                  <label for="phoneNumber">Phone Number</label>
+               </div>
+               <input type="tel" name="phoneNumber" id="phoneNumber">
+            </div>
 
             <div>
                <label for="address">Street Address</label>
@@ -73,8 +86,9 @@
                <label for="zipCode">Zip Code</label>
             </div>
             <input type="text" name="zipCode" id="zipCode">
-            <hr class="lineTwo">
          </fieldset>
+
+         <hr class="lineTwo">
 
          <!-- Newsletter -->
          <fieldset class="secondPart">
@@ -83,7 +97,7 @@
                <label>Select the newsletter you would like to receive</label>
             </div>
             <span>
-               <input type="checkbox" id="htmlNews" name="htmlNews" value="html"checked>
+               <input type="checkbox" id="htmlNews" name="htmlNews" value="html" checked>
                <label for="htmlNews">HTML News</label><br>
             </span>
 
