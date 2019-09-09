@@ -10,6 +10,11 @@ footer {
    font-size: 1em;
 }
 
+main {
+   background-color: lightblue;
+   padding-bottom: 30px;
+}
+
 .headBar {
    background-color: #293945;
    font-size: 1.5em;
@@ -85,41 +90,52 @@ legend {
 }
 
 textarea,
-input{
+input {
    width: 90%;
-   background-color: #fafafa;
-   text-align: left;
-   margin-bottom: 10px;
-   padding: 5px 10px;
-   border: 1px solid #fafafa;
-   border-radius: 5px;
-}
-
-select {
-   width: 90%; 
    background-color: #fafafa;
    text-align: left;
    margin-bottom: 10px;
    padding: 6px 10px;
    border: 1px solid #fafafa;
+   border-radius: 5px;
+}
+
+select {
+   width: 90%;
+   background-color: #fafafa;
+   text-align: left;
+   margin-bottom: 10px;
+   /* Fix Padding Not Working on Chrome */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   padding: 6px 10px;
+   /* Fix */
+   border: 1px solid #fafafa;
    font-size: 0.8em;
    color: grey;
    box-sizing: content-box;
+   height: 20px;
 }
 
-textarea{
-   width:100%;
-   box-sizing:border-box;
+textarea {
+   width: 100%;
+   box-sizing: border-box;
 }
 
 input:focus,
 textarea:focus {
-   border: 1px solid #293945;
+   outline: 0;
+   outline: 1px solid #293945;
+   background-color: lightgrey;
+   transition-property: background-color;
+   transition-delay: 0.1s;
 }
+
 
 input[placeholder="Required "] {
    text-align: right;
-   font-size: 0.8em;
+   font-size: 1em;
    color: grey;
    font-style: italic;
 }
@@ -194,11 +210,12 @@ input[type="radio"]+label {
 
 #signUpButton {
    width: 100%;
-   border: 1px solid #fafafa;
+   border: 1px solid #4ebbb5;
    background-color: #4ebbb5;
    text-align: center;
+   margin-top: 15px;
    margin-bottom: 10px;
-   margin:auto;
+   /* margin:auto; */
    padding: 15px 10px;
    color: white;
    border-radius: 5px;
@@ -211,6 +228,7 @@ footer {
    color: grey;
    font-size: 0.8em;
    font-style: italic;
+   padding: 10px 0;
 }
 
 
@@ -225,29 +243,29 @@ footer {
 
    .flexbox {
       display: flex;
-      padding:2px 0;
-      justify-content:space-between;
-      align-items:center;
+      padding: 2px 0;
+      justify-content: space-between;
+      align-items: center;
    }
 
    .inputLabel {
-      flex-basis: 25%; 
+      flex-basis: 25%;
    }
 
-   .inputBox{
-      flex-basis:75%;
-      margin-left:20px;
+   .inputBox {
+      flex-basis: 75%;
+      margin-left: 20px;
       padding: 10px 10px;
       margin-bottom: 10px;
    }
-   
-   .textarea{
-      width:100%;
+
+   .textarea {
+      width: 100%;
    }
 
    label {
       font-size: 0.9em;
    }
-  
+
 
 }
