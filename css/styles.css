@@ -43,8 +43,6 @@ footer {
 .lineBox {
    margin-bottom: 30px;
    padding: 5px 0;
-
-
 }
 
 .lineOne,
@@ -66,7 +64,6 @@ footer {
 }
 
 /* Form */
-
 form {
    width: 90%;
    box-sizing: border-box;
@@ -97,7 +94,11 @@ input {
    padding: 5px 10px;
    border: 1px solid #fafafa;
    border-radius: 5px;
+}
 
+textarea{
+   width:100%;
+   box-sizing:border-box;
 }
 
 input:focus,
@@ -123,7 +124,6 @@ select {
    font-size: 0.8em;
    color: grey;
 }
-
 
 #zipCode {
    width: 50%;
@@ -188,20 +188,21 @@ input[type="radio"]+label {
 /* Sign Up Button */
 .buttonBox {
    border: none;
-   padding: 5px 10px;
-   margin: 0 2px;
+   padding: 5px 0;
+   margin: auto;
 }
 
 #signUpButton {
-   width: 90%;
+   width: 100%;
    border: 1px solid #fafafa;
    background-color: #4ebbb5;
    text-align: center;
    margin-bottom: 10px;
+   margin:auto;
    padding: 15px 10px;
    color: white;
-   box-sizing: content-box;
    border-radius: 5px;
+   box-sizing: border-box;
 }
 
 /* Footer */
@@ -224,27 +225,28 @@ footer {
 
    .flexbox {
       display: flex;
-      align-items: center;
       padding:2px 0;
-      justify-content: space-between;
+      justify-content:space-between;
+      align-items:center;
    }
 
    .inputLabel {
-      flex-grow: 1; 
+      flex-basis: 25%; 
    }
 
    .inputBox {
-      flex-basis:80%;
-      padding:0;
-      margin:0;
+      flex-basis:75%;
+      margin-left:20px;
+      padding: 10px 10px;
+      margin-bottom: 10px;
    }
 
    select,
    input {
       margin-left:20px;
       padding: 10px 10px;
-      box-sizing:content-box;
    }
+
    select {
       margin-bottom: 10px;
       padding: 10px 10px;
@@ -252,6 +254,7 @@ footer {
       font-size: 0.8em;
       color: grey;
    }
+
    .textarea{
       width:100%;
    }
