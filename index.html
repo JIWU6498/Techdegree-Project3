@@ -31,61 +31,74 @@
          <!-- Contact Information -->
          <fieldset>
             <legend>Contact Information</legend>
-            <div class="flexbox">
-               <label for="fullName">Full Name</label>
-               <input type="text" name="name" id="name" placeholder="Required " required>
-            </div>
 
             <div class="flexbox">
-               <div class="labelBox">
+               <div class="inputlabel">
                   <label for="fullName">Full Name</label>
                </div>
                <div class="inputBox">
-                  <input type="text" name="name" id="name" placeholder="Required " required>
+                  <input type="text" name="name" id="name" placeholder="Required "  class="inputbox"required>
                </div>
             </div>
 
             <div class="flexbox">
-               <div>
+               <div class="inputlabel">
                   <label for="email">Email Address</label>
                </div>
-               <input type="email" name="email" id="email" placeholder="Required " required>
+               <div class="inputBox">
+                  <input type="email" name="email" id="email" placeholder="Required " required>
+               </div>
             </div>
 
-            <div class="felxbox">
-               <div>
+            <div class="flexbox">
+               <div class="inputlabel">
                   <label for="phoneNumber">Phone Number</label>
                </div>
-               <input type="tel" name="phoneNumber" id="phoneNumber">
+               <div class="inputBox">
+                  <input type="tel" name="phoneNumber" id="phoneNumber">
+               </div>
             </div>
 
-            <div>
-               <label for="address">Street Address</label>
+            <div class="flexbox">
+               <div class="inputlabel">
+                  <label for="address">Street Address</label>
+               </div>
+               <div class="inputBox">
+                  <input type="text" name="address" id="address">
+               </div>
             </div>
-            <input type="text" name="address" id="address">
 
-            <div>
-               <label for="city">City</label>
+            <div class="flexbox">
+               <div class="inputlabel">
+                  <label for="city">City</label>
+               </div>
+               <div class="inputBox">
+                  <input type="text" name="city" id="city">
+               </div>
             </div>
-            <input type="text" name="city" id="city">
 
-            <div>
-               <label for="state">State</label>
+            <div class="flexbox">
+               <div class="inputlabel">
+                  <label for="state">State</label>
+               </div>
+               <div class="inputBox">
+                  <select id="state" name="state">
+                     <option value="" placeholder="Choose State">Choose State</option>
+                     <option value="Melbourne">Melbourne</option>
+                     <option value="Sydney">Sydney</option>
+                  </select>
+               </div>
             </div>
-            <select id="state" name="state">
-               <option value="" placeholder="Choose State">Choose State</option>
-               <option value="Melbourne">
-                  Melbourne
-               </option>
-               <option value="Sydney">
-                  Sydney
-               </option>
-            </select>
 
-            <div>
-               <label for="zipCode">Zip Code</label>
+            <div class="flexbox">
+               <div class="inputlabel">
+                  <label for="zipCode">Zip Code</label>
+               </div>
+               <div class="inputBox">
+                  <input type="text" name="zipCode" id="zipCode">
+               </div>
             </div>
-            <input type="text" name="zipCode" id="zipCode">
+
          </fieldset>
 
          <hr class="lineTwo">

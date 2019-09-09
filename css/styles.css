@@ -41,8 +41,8 @@ footer {
 
 /* Decoration Line */
 .lineBox {
-   margin-bottom:30px;
-   padding: 5px 10px;
+   margin-bottom: 30px;
+   padding: 5px 0;
 
 
 }
@@ -76,8 +76,8 @@ form {
 
 fieldset {
    border: none;
-   padding: 5px 10px;
-   margin:auto;
+   padding: 0;
+   margin: auto;
 }
 
 legend {
@@ -97,6 +97,7 @@ input {
    padding: 5px 10px;
    border: 1px solid #fafafa;
    border-radius: 5px;
+
 }
 
 input:focus,
@@ -112,7 +113,7 @@ input[placeholder="Required "] {
 }
 
 select {
-   width:90%;
+   width: 90%;
    box-sizing: content-box;
    background-color: #fafafa;
    text-align: left;
@@ -221,21 +222,42 @@ footer {
       margin: auto;
    }
 
-   fieldset{
-      display:flex;
+   .flexbox {
+      display: flex;
+      align-items: center;
+      padding:2px 0;
+      justify-content: space-between;
    }
 
-   .flexbox{
-      flex-flow:nowrap;
+   .inputLabel {
+      flex-grow: 1; 
    }
 
-   .labelBox{
-      flex-grow:1;
+   .inputBox {
+      flex-basis:80%;
+      padding:0;
+      margin:0;
    }
 
-   .inputBox{
-      flex-grow:2;
+   select,
+   input {
+      margin-left:20px;
+      padding: 10px 10px;
+      box-sizing:content-box;
+   }
+   select {
+      margin-bottom: 10px;
+      padding: 10px 10px;
+      border: 1px solid #fafafa;
+      font-size: 0.8em;
+      color: grey;
+   }
+   .textarea{
+      width:100%;
    }
 
-   
+   label {
+      font-size: 0.9em;
+   }
+
 }
