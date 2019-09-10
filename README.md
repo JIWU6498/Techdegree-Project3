@@ -17,7 +17,7 @@ Chrome couldn't take the padding of the select element, so be careful when addre
 
 ## Tools
 * <a href="https://validator.w3.org/#validate_by_input">W3C CSS</a><br>
-* <a href="https://validator.w3.org/#validate_by_input>"HTML validator</a><br>
+* <a href="https://validator.w3.org/#validate_by_input">HTML validator</a><br>
 * Google DevTools
 
 ## Resources
