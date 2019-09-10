@@ -123,6 +123,11 @@ textarea {
    box-sizing: border-box;
 }
 
+textarea:focus,
+input:focus {
+   border: 1px solid #293945;
+}
+
 input:focus,
 textarea:focus {
    outline: 0;
@@ -135,7 +140,7 @@ textarea:focus {
 
 input[placeholder="Required "] {
    text-align: right;
-   font-size: 1em;
+   font-size: 0.8em;
    color: grey;
    font-style: italic;
 }
@@ -149,13 +154,10 @@ input[placeholder="Required "] {
 label {
    display: block;
    color: #293945;
-   font-size: 0.8em;
+   font-size: 1em;
    padding-bottom: 10px;
 }
 
-input:focus {
-   border: 1px solid #293945;
-}
 
 .span {
    vertical-align: middle;
@@ -264,7 +266,7 @@ footer {
    }
 
    label {
-      font-size: 0.9em;
+      font-size: 1em;
    }
 
 
