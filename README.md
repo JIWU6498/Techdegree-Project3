@@ -11,6 +11,10 @@ I wrote CSS to style the page for the small mobile device first and then use min
 ## Difficulties
 Chrome couldn't take the padding of the select element, so be careful when addressing it.
 
+## Preview
+<a href="https://jiwu6498.github.io/Techdegree-Project3/">Preview</a>
+
+
 ## Skills
 * HTML
 * CSS
